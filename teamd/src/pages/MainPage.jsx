@@ -46,16 +46,16 @@ const MainPage = () => {
       >
         {" "}
         {/* ensures exact 32px spacing */}
-        <div style={{ width: "71rem" }}>
+        <div>
           <LectureStatus />
         </div>
-        <div style={{ width: "41.5625rem" }}>
+        <div>
           <ProfileCard />
         </div>
       </div>
 
       {/* 하단 출석정보 */}
-      <div style={{ marginTop: "2rem" }}>
+      <div>
         <AttendanceInfo />
       </div>
     </div>
