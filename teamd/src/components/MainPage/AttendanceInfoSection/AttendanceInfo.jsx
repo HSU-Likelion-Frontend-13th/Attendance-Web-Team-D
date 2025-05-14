@@ -13,7 +13,7 @@ const AttendanceInfoDetails = () => (
       <strong>출석 인정 시간</strong>: 수업 시작 5분 전 ~ 수업시간 5분 후
     </p>
     <p className="attendance-text-main">
-      <strong>지각 시간</strong>: 수업 시작 5분 후 ~15분까지
+      <strong>지각 시간</strong>: 수업 시작 5분 후 ~30분까지
     </p>
     <p className="attendance-text-sub">*이후에는 결석으로 처리됩니다</p>
   </div>
