@@ -1,5 +1,3 @@
-
-
 import React from "react";
 
 const ProfileInfoCard = () => {
@@ -12,8 +10,8 @@ const ProfileInfoCard = () => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        width: "22.375rem",
-        height: "12.375rem",
+        width: "25rem",
+        height: "13rem",
         border: "1px solid #BABABA",
         boxSizing: "border-box",
       }}
@@ -43,30 +41,38 @@ const ProfileInfoCard = () => {
         style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
-          borderTop: "1px solid #ccc",
           marginTop: "auto",
           height: "3.25rem",
         }}
       >
-        <div
+        <button
+          type="button"
+          aria-label="마이페이지"
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            borderRight: "1px solid #000000",
             fontSize: "0.938rem",
             fontWeight: 300,
             gap: "0.5rem",
+            backgroundColor: "#f1f1f1",
+            border: "none",
+            borderRight: "1px solid #BABABA",
+            borderTop: "1px solid #BABABA",
+            borderBottomLeftRadius: "1.875rem",
+            cursor: "pointer",
           }}
         >
           <img
             src="/images/mypage.png"
             alt="마이페이지 아이콘"
             style={{ width: "2.143rem", height: "2.143rem" }}
-          />{" "}
+          />
           마이페이지
-        </div>
-        <div
+        </button>
+        <button
+          type="button"
+          aria-label="로그아웃"
           style={{
             display: "flex",
             alignItems: "center",
@@ -74,15 +80,20 @@ const ProfileInfoCard = () => {
             fontSize: "0.938rem",
             fontWeight: 300,
             gap: "0.5rem",
+            backgroundColor: "#f1f1f1",
+            border: "none",
+            borderTop: "1px solid #BABABA",
+            borderBottomRightRadius: "1.875rem",
+            cursor: "pointer",
           }}
         >
           <img
             src="/images/logout.png"
             alt="로그아웃 아이콘"
             style={{ width: "2.143rem", height: "2.143rem" }}
-          />{" "}
+          />
           로그아웃
-        </div>
+        </button>
       </div>
     </div>
   );

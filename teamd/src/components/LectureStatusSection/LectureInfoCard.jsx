@@ -1,60 +1,84 @@
-const LectureInfoCard = () => (
-  <div style={styles.container}>
-    <div style={styles.header}>
-      <span>강의명</span>
-      <span>강의시간</span>
+const LectureInfoCard = () => {
+  const lecture = {
+    id: 1,
+    nameOfLecture: "ios프로그래밍",
+    time: "14:00:00",
+    room: "탐구관401",
+    division: "A반",
+    professor: "이재문",
+  };
+  //   const lecture = null;
+
+  return (
+    <div
+      style={
+        lecture
+          ? styles.container
+          : {
+              ...styles.container,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }
+      }
+    >
+      {lecture ? (
+        <div style={styles.columns}>
+          <div style={styles.column}>
+            <span style={styles.title}>{lecture.nameOfLecture}</span>
+            <span style={styles.sub}>{lecture.room}</span>
+          </div>
+          <div style={styles.column}>
+            <span style={styles.title}>{lecture.time}</span>
+            <div style={styles.subGroup}>
+              <span style={styles.sub}>{lecture.division}</span>
+              <span style={styles.sub}>{lecture.professor}</span>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <span style={styles.emptyText}>강의 정보가 없습니다</span>
+      )}
     </div>
-    <div style={styles.details}>
-      <div style={styles.detailLeft}>
-        <div style={styles.detailItem}>강의실</div>
-      </div>
-      <div style={styles.detailRight}>
-        <div style={styles.detailItem}>분반</div>
-        <div style={styles.detailItem}>교수님</div>
-      </div>
-    </div>
-  </div>
-);
+  );
+};
 
 const styles = {
   container: {
     backgroundColor: "#f1f1f1",
     borderRadius: "2rem",
     padding: "2rem",
-    flex: 2,
-    minWidth: "250px",
+    width: "40.8rem",
   },
-  header: {
-    fontFamily: "Pretendard",
+  columns: {
     display: "flex",
     justifyContent: "space-around",
-    alignItems: "flex-end",
+    alignItems: "flex-start",
+  },
+  column: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  title: {
+    fontFamily: "Pretendard",
     fontSize: "2.5rem",
     fontWeight: "700",
   },
-  details: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "flex-end",
-    marginTop: "1rem",
-    width: "100%",
-  },
-  detailLeft: {
-    display: "flex",
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "flex-end",
-  },
-  detailRight: {
-    display: "flex",
-    gap: "2rem",
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "flex-end",
-  },
-  detailItem: {
+  sub: {
+    fontFamily: "Pretendard",
     color: "#8A8A8A",
-    fontSize: "1.6rem",
+    fontSize: "1.875rem",
+    marginTop: "2.7rem",
+  },
+  subGroup: {
+    display: "flex",
+    gap: "5rem",
+  },
+  emptyText: {
+    fontSize: "1.8rem",
+    fontFamily: "Pretendard",
+    color: "#444",
   },
 };
 

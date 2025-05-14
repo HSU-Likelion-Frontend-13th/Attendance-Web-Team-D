@@ -22,7 +22,6 @@ const CurrentTime = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-end",
-        paddingRight: "2vw",
       }}
     >
       <span
@@ -41,11 +40,11 @@ const CurrentTime = () => {
         style={{
           fontFamily: "Pretendard, sans-serif",
           fontWeight: 800,
-          fontSize: "4.375rem", 
+          fontSize: "4.375rem",
           letterSpacing: "-0.1rem",
           color: "#000",
-          minWidth: "18.75rem", 
-          minHeight: "5.25rem", 
+          minWidth: "18.75rem",
+          minHeight: "5.25rem",
           display: "flex",
           alignItems: "center",
           justifyContent: "flex-end",
