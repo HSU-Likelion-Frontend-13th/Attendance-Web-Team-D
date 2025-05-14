@@ -47,8 +47,8 @@ const AttendanceButtonCard = ({ lectureTime }) => {
 
   const getButtonText = () => {
     if (hasAttended) {
-      if (isAbsentMarked) return "결   석";
-      if (isLateMarked) return "지   각";
+      if (isLateMarked) return "지\u00A0\u00A0\u00A0\u00A0\u00A0각";
+      if (isLateMarked) return "지\u00A0\u00A0\u00A0\u00A0\u00A0각";
       return "출석완료";
     }
     return "출석하기";
