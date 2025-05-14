@@ -1,0 +1,27 @@
+.current-time-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.current-time-label {
+  font-size: 1.5rem;
+  font-family: Pretendard, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+  color: #000;
+  margin-bottom: 0.3rem;
+}
+
+.current-time-value {
+  font-family: Pretendard, sans-serif;
+  font-weight: 800;
+  font-size: 4.375rem;
+  letter-spacing: -0.1rem;
+  color: #000;
+  min-width: 18.75rem;
+  min-height: 5.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

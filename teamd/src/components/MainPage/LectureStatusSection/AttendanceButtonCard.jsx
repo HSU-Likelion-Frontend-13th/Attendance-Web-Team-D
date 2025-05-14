@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AttendanceModal from "./AttendanceModal";
+import "./css/AttendanceButtonCard.css";
 
 const AttendanceButtonCard = () => {
   const [status, setStatus] = useState("none");
@@ -8,7 +9,7 @@ const AttendanceButtonCard = () => {
   const [isLateMarked, setIsLateMarked] = useState(false);
   const [isAbsentMarked, setIsAbsentMarked] = useState(false);
 
-  const lectureTime = "11:00:00";
+  const lectureTime = "14:00:00";
 
   useEffect(() => {
     const now = new Date();
@@ -74,15 +75,8 @@ const AttendanceButtonCard = () => {
       <button
         onClick={handleClick}
         disabled={hasAttended}
+        className="attendance-button"
         style={{
-          borderRadius: "2rem",
-          padding: "2rem",
-          width: "21.8rem",
-          height: "13rem",
-          fontSize: "2.5rem",
-          fontWeight: 600,
-          fontFamily: "Pretendard",
-          border: "none",
           backgroundColor: getButtonColor(),
           color: getTextColor(),
           cursor: hasAttended ? "default" : "pointer",

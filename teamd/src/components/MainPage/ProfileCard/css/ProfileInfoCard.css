@@ -1,0 +1,64 @@
+.profile-info-card {
+  background-color: #f1f1f1;
+  border-radius: 1.875rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25rem;
+  height: 13rem;
+  border: 1px solid #bababa;
+  box-sizing: border-box;
+}
+
+.profile-info-text {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.profile-info-name {
+  font-size: 1.688rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.profile-info-major {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #333;
+  font-weight: 400;
+}
+
+.profile-info-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: auto;
+  height: 3.25rem;
+}
+
+.profile-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.938rem;
+  font-weight: 300;
+  gap: 0.5rem;
+  background-color: #f1f1f1;
+  border: none;
+  border-top: 1px solid #bababa;
+  cursor: pointer;
+}
+
+.profile-button-left {
+  border-right: 1px solid #bababa;
+  border-bottom-left-radius: 1.875rem;
+}
+
+.profile-button-right {
+  border-bottom-right-radius: 1.875rem;
+}
+
+.profile-button-icon {
+  width: 2.143rem;
+  height: 2.143rem;
+}

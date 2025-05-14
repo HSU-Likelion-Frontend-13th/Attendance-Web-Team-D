@@ -1,0 +1,35 @@
+.main-page {
+  font-family: sans-serif;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main-logo-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-logo-hsu {
+  height: 3.5rem;
+  object-fit: contain;
+}
+
+.main-logo-lion {
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2rem;
+  gap: 2rem;
+}
