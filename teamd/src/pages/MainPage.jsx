@@ -1,8 +1,8 @@
 import React from "react";
-import CurrentTime from "../components/MainPage/CurrentTimeSection/CurrentTime";
-import LectureSection from "../components/MainPage/LectureStatusSection/LectureSection";
-import ProfileCard from "../components/MainPage/ProfileCard/ProfileCard";
-import AttendanceInfo from "../components/MainPage/AttendanceInfoSection/AttendanceInfo";
+import CurrentTime from "../Maincomponents/MainPage/CurrentTimeSection/CurrentTime";
+import LectureSection from "../Maincomponents/MainPage/LectureStatusSection/LectureSection";
+import ProfileCard from "../Maincomponents/MainPage/ProfileCard/ProfileCard";
+import AttendanceInfo from "../Maincomponents/MainPage/AttendanceInfoSection/AttendanceInfo";
 import "./css/MainPage.css";
 
 const MainPage = () => {

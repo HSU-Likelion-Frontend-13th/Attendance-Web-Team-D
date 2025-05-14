@@ -8,8 +8,8 @@ const LectureSection = () => {
     const fetchedLecture = {
       id: 1,
       nameOfLecture: "ios프로그래밍",
-      time: "15:00:00",
-      room: "탐구관401",
+      time: "18:00:00",
+      room: "공학관301",
       division: "A반",
       professor: "이재문",
     };
