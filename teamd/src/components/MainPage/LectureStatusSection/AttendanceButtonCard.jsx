@@ -2,16 +2,16 @@ import React, { useState, useEffect } from "react";
 import AttendanceModal from "./AttendanceModal";
 import "./css/AttendanceButtonCard.css";
 
-const AttendanceButtonCard = () => {
+const AttendanceButtonCard = ({ lectureTime }) => {
   const [status, setStatus] = useState("none");
   const [showModal, setShowModal] = useState(false);
   const [hasAttended, setHasAttended] = useState(false);
   const [isLateMarked, setIsLateMarked] = useState(false);
   const [isAbsentMarked, setIsAbsentMarked] = useState(false);
 
-  const lectureTime = "14:00:00";
-
   useEffect(() => {
+    if (!lectureTime) return;
+
     const now = new Date();
     const [hour, minute, second] = lectureTime.split(":").map(Number);
     const start = new Date(now);

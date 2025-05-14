@@ -1,6 +1,6 @@
 import React from "react";
 import CurrentTime from "../components/MainPage/CurrentTimeSection/CurrentTime";
-import LectureStatus from "../components/MainPage/LectureStatusSection/LectureStatus";
+import LectureSection from "../components/MainPage/LectureStatusSection/LectureSection";
 import ProfileCard from "../components/MainPage/ProfileCard/ProfileCard";
 import AttendanceInfo from "../components/MainPage/AttendanceInfoSection/AttendanceInfo";
 import "./css/MainPage.css";
@@ -26,7 +26,7 @@ const MainPage = () => {
 
       <div className="main-section">
         <div>
-          <LectureStatus />
+          <LectureSection />
         </div>
         <div>
           <ProfileCard />

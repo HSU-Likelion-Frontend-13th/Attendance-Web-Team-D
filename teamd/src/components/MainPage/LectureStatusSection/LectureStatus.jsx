@@ -1,20 +1,11 @@
+import React, { useState, useEffect } from "react";
 import LectureStatusHeader from "./LectureStatusHeader";
 import LectureInfoCard from "./LectureInfoCard";
 import AttendanceButtonCard from "./AttendanceButtonCard";
-import { useState, useEffect } from "react";
 import "./css/LectureStatus.css";
 
-const LectureStatus = () => {
+const LectureStatus = ({ lecture }) => {
   const [isActive, setIsActive] = useState(false);
-
-  const lecture = {
-    id: 1,
-    nameOfLecture: "ios프로그래밍",
-    time: "14:00:00",
-    room: "탐구관401",
-    division: "A반",
-    professor: "이재문",
-  };
 
   useEffect(() => {
     if (!lecture?.time) return;
@@ -30,6 +21,8 @@ const LectureStatus = () => {
 
     setIsActive(now >= startWindow && now <= endWindow);
   }, [lecture]);
+
+  if (!lecture) return null; 
 
   return (
     <section className="lecture-status-section">
@@ -47,7 +40,7 @@ const LectureStatus = () => {
 
       <div className="lecture-status-card-row">
         <LectureInfoCard lecture={lecture} />
-        <AttendanceButtonCard />
+        <AttendanceButtonCard lectureTime={lecture.time} />
       </div>
     </section>
   );
