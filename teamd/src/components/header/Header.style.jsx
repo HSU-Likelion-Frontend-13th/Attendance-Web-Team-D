@@ -9,7 +9,7 @@ export const HeaderLayout = styled.div`
 `;
 
 export const HeaderLogoImg = styled.img`
-    margin-top: 9vw;
-    width: 25%;
-    height: 7vh;
+    margin-top: 7vh;
+    width: 35vw;
+    height: 10vh;
 `;

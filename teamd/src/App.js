@@ -1,12 +1,8 @@
-import Logo from './components/Logo/Logo';
-import Header from './components/header/Header';
+import LoginPage from './components/pages/LoginPage';
 
 function App() {
   return (
-    <div className="App">
-      <Logo />
-      <Header />
-    </div>
+    <LoginPage/>
   );
 }
 
