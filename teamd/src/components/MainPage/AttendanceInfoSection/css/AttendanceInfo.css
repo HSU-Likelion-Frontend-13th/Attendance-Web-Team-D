@@ -1,0 +1,56 @@
+.attendance-wrapper {
+  background-color: #d9d9d9;
+  border-radius: 1.875rem;
+  width: 71rem;
+  height: 20rem;
+  padding: 2rem;
+  opacity: 1;
+  margin-top: 2.75rem;
+}
+
+.attendance-header-wrapper {
+  background-color: #014099;
+  border: 1px solid #004098;
+  border-radius: 6.25rem;
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17.9375rem;
+  height: 3.8125rem;
+  box-sizing: border-box;
+  margin-bottom: 1.8125rem;
+}
+
+.attendance-header-text {
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: white;
+  font-family: Pretendard;
+}
+
+.attendance-detail-box {
+  background-color: #f1f1f1;
+  border-radius: 2.5rem;
+  padding: 2rem;
+  width: 66rem;
+  height: 12rem;
+  box-sizing: border-box;
+}
+
+.attendance-text-main {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: Pretendard;
+  color: #000000;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.attendance-text-sub {
+  font-size: 1.5625rem;
+  color: #000000;
+  font-weight: 200;
+  margin-top: 1rem;
+  font-family: Pretendard;
+}

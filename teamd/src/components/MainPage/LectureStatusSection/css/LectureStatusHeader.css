@@ -1,0 +1,18 @@
+.lecture-status-header-container {
+  background-color: #014099;
+  border: 1px solid #004098;
+  border-radius: 100px;
+  width: 17.94rem;
+  height: 3.81rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.lecture-status-header-text {
+  font-family: Pretendard;
+  color: #ffffff;
+  font-size: 1.875rem;
+  font-weight: 500;
+}

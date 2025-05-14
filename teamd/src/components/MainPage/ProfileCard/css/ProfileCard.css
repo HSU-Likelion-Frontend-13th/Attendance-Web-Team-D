@@ -1,0 +1,14 @@
+.profile-card {
+  background-color: #d9d9d9;
+  padding: 2rem;
+  border-radius: 1.875rem;
+  width: 41.5625rem;
+  height: 20rem;
+  margin-right: 2.938rem;
+}
+
+.profile-card-content {
+  display: flex;
+  gap: 1.563rem;
+  align-items: center;
+}

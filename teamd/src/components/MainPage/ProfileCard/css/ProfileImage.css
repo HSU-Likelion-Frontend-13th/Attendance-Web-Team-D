@@ -1,0 +1,15 @@
+.profile-image-wrapper {
+  padding-left: 1rem;
+  width: 13.125rem;
+  height: 13.625rem;
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 13.125rem;
+  height: 13.098rem;
+  object-fit: cover;
+  border-radius: 1.25rem;
+  background-color: #f1f1f1;
+}

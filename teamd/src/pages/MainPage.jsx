@@ -1,51 +1,30 @@
 import React from "react";
-import CurrentTime from "../components/CurrentTime";
-import LectureStatus from "../components/LectureStatus";
-import ProfileCard from "../components/ProfileCard";
-import AttendanceInfo from "../components/AttendanceInfo";
+import CurrentTime from "../components/MainPage/CurrentTimeSection/CurrentTime";
+import LectureStatus from "../components/MainPage/LectureStatusSection/LectureStatus";
+import ProfileCard from "../components/MainPage/ProfileCard/ProfileCard";
+import AttendanceInfo from "../components/MainPage/AttendanceInfoSection/AttendanceInfo";
+import "./css/MainPage.css";
 
 const MainPage = () => {
   return (
-    <div
-      style={{
-        fontFamily: "sans-serif",
-        padding: "2rem",
-        backgroundColor: "#fff",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-start",
-        }}
-      >
-        <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+    <div className="main-page">
+      <div className="main-header">
+        <div className="main-logo-group">
           <img
             src="/images/Isolation_Mode.png"
             alt="HSU Logo"
-            style={{ height: "3.5rem", objectFit: "contain" }}
+            className="main-logo-hsu"
           />
           <img
             src="/images/lion.png"
             alt="Lion Logo"
-            style={{ height: "2.5rem", objectFit: "contain" }}
+            className="main-logo-lion"
           />
         </div>
         <CurrentTime />
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-start",
-          marginTop: "2rem",
-          gap: "2rem",
-        }}
-      >
-        {" "}
-        {/* ensures exact 32px spacing */}
+      <div className="main-section">
         <div>
           <LectureStatus />
         </div>
@@ -54,7 +33,6 @@ const MainPage = () => {
         </div>
       </div>
 
-      {/* 하단 출석정보 */}
       <div>
         <AttendanceInfo />
       </div>

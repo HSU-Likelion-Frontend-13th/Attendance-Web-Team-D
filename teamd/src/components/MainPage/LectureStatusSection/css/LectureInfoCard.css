@@ -1,0 +1,48 @@
+.lecture-card-container {
+  background-color: #f1f1f1;
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 40.8rem;
+}
+
+.lecture-card-container.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lecture-columns {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.lecture-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lecture-title {
+  font-family: Pretendard;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.lecture-sub {
+  font-family: Pretendard;
+  color: #8a8a8a;
+  font-size: 1.875rem;
+  margin-top: 2.7rem;
+}
+
+.lecture-sub-group {
+  display: flex;
+  gap: 5rem;
+}
+
+.lecture-empty-text {
+  font-size: 1.8rem;
+  font-family: Pretendard;
+  color: #444;
+}

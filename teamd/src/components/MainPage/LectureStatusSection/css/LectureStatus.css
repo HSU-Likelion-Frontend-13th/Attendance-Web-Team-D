@@ -1,0 +1,28 @@
+.lecture-status-section {
+  background-color: #d9d9d9;
+  border-radius: 1.875rem;
+  width: 71rem;
+  height: 20rem;
+  padding: 2rem;
+  opacity: 1;
+}
+
+.lecture-status-header-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.lecture-status-text {
+  font-family: Pretendard;
+  font-size: 2.188rem;
+  font-weight: 600;
+  margin-top: -1rem;
+}
+
+.lecture-status-card-row {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
