@@ -1,17 +1,7 @@
 import React from "react";
 import "./css/LectureInfoCard.css";
 
-const LectureInfoCard = () => {
-  const lecture = {
-    id: 1,
-    nameOfLecture: "ios프로그래밍",
-    time: "14:00:00",
-    room: "탐구관401",
-    division: "A반",
-    professor: "이재문",
-  };
-  // const lecture = null;
-
+const LectureInfoCard = ({ lecture }) => {
   return (
     <div
       className={

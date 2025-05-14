@@ -2,7 +2,7 @@ import React from "react";
 import "./css/ProfileInfoCard.css";
 
 const ProfileInfoCard = ({ user }) => {
-    if (!user) return null; // 로딩 중 또는 데이터 없음 처리
+  if (!user) return null;
 
   return (
     <div className="profile-info-card">
